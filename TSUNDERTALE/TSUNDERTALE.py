@@ -5,6 +5,7 @@
 「はじめる」をクリックするとスタートです。矢印キーでソウル（ハート）を操作してください。
 ひたすらブラスター攻撃（白いビーム）を避けてください。ＨＰが0になるとゲームオーバーです。
 レベル200までいくとゲームクリアです。
+ゲームクリアまたはゲームオーバーをすると、再起動する必要があります。(いつか改良します)
 
 #注意
 このプログラムはおそらくgoogle Colaboratoryでは動きません。（画面を出せない）
@@ -29,7 +30,7 @@ screen_width = 800
 screen_height = 600
 screen = pygame.display.set_mode((screen_width, screen_height))
 #タイトル
-pygame.display.set_caption("NOTSUNDERTALE") 
+pygame.display.set_caption("TSUNDERTALE") 
 #画像読み込み
 title = pygame.image.load("title.png")
 start = pygame.image.load("はじめる.png")
@@ -583,4 +584,5 @@ while True:#すべての根本となる司令塔
     pygame.display.flip()
     pygame.display.update()
     # フレームレートを30FPSに固定
+
     clock.tick(30)
